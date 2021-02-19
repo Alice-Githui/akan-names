@@ -9,35 +9,59 @@
     <title>GHANIAN AKAN NAMES</title>
 </head>
 <body>
-    <div>
-        <p>
-            The Ghanian culture, like most African cultures, have traditional naming systems. The Ghanian cultural naming system asigns children names, referred to as their Akan Names by taking into account their gender and the day when they were born.</p>
-        <br>
-         <p>This application takes into account the <strong><em>day</em></strong></p> of birth, that is, <strong><em>the day of the week when the child was born</em></strong>  and their <strong><em>gender</em></strong> to assign them their Akan Names.</p>
-         <br>
-         <p>Where people are not aware of their day of birth but know their date of birth, the application will use their date of birth and their year of birth and compute their day of birth. </p>
-            
+    <div class="container">
+        <div class ="card">
+            <div class="card-title">
+                <header>
+                    <img src="Images/headerlogo.jpg" alt="ghanian kente fabric">
+                    <div class ="img-header">
+                       <ol>
+                           <li><a href= "">About</a></li>
+                           <li><a href= " ">Akan Names</a></li>
+                        </ol>
+                    </div>
 
-    </div>
-    <form>
-        <div>
-            <label for ="birthday" >Enter Year of Birth:</label>
-            <input type ="date" id="birthday" name="birthday" placeholder="Enter year of birth" required>  <!--the user cannot submit their information without making this entry-->
+                </header>
+            </div>
+        </div>
+        <div class ="card">
+            <div class="card-body">    
+               <div class ="purpose"> <!--this div class explains the use of this application-->
+                  <p>
+                    The Ghanian culture, like most African cultures, have traditional naming systems. The Ghanian cultural naming system asigns children names, referred to as their Akan Names by taking into account their gender and the day when they were born.</p>
+                  <br>
+                  <p>This application takes into account the <strong><em>day </em></strong> of birth, that is, <strong><em>the day of the week when the child was born</em></strong>  and their <strong><em>gender</em></strong> to assign them their Akan Names.</p>
+                  <br>
+                  <p>Where people are not aware of their day of birth but know their date of birth, the application will use their date of birth and their year of birth and compute their day of birth. </p>
+               </div>
+           </div>
+        </div>
+            <div class ="card">
+                <div class= "card-body">
+                   <div class= "form">
+                     <form>
+                       <div>
+                          <label for ="birthday" >Enter Year of Birth:</label>
+                          <input type ="date" id="birthday" name="birthday" placeholder="Enter year of birth" required>  <!--the user cannot submit their information without making this entry-->
  
-        </div>
-        <div>
-            <label for ="Male">
-                <input id ="Male" type ="radio" value="male" name="Male-Female"> Male
-            </label>
-            <label>
-                <input id ="Female" type="radio" value= "female" name="Male-Female"> Female
-            </label>
-        </div>
-        <div>
-            <button type ="submit">Submit</button>
-        </div>
+                        </div>
+                        <div>
+                           <label for ="Male">
+                           <input id ="Male" type ="radio" value="male" name="Male-Female"> Male
+                           </label>
+                           <label>
+                           <input id ="Female" type="radio" value= "female" name="Male-Female"> Female
+                           </label>
+                        </div>
+                
+                        <div>
+                        <button type ="submit">Submit</button>
+                        </div>
         
-    </form>
+                      </form>
+                    </div>
+                </div>
+            </div>
     
     <script src="JS/index.js"></script>
 </body>
