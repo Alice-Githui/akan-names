@@ -4,22 +4,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
     <link href="CSS/style.css" rel="stylesheet" type= "type/CSS">
     <title>GHANIAN AKAN NAMES</title>
 </head>
 <body>
     <form>
         <div>
-            <label for ="input1" >Enter Year of Birth:</label>
-            <input type =" date" id="pickdate" name="date" placeholder="Enter year of birth" required>  <!--the user cannot submit their information without making this entry-->
+            <label for ="birthday" >Enter Year of Birth:</label>
+            <input type ="date" id="birthday" name="birthday" placeholder="Enter year of birth" required>  <!--the user cannot submit their information without making this entry-->
  
         </div>
         <div>
             <label for ="Male">
-                <input id ="Male" type ="radio" name= "Male-Female"> Male
+                <input id ="Male" type ="radio" value="male" name="Male-Female"> Male
             </label>
             <label>
-                <input id ="Female" type="radio" name="Male-Female"> Female
+                <input id ="Female" type="radio" value= "female" name="Male-Female"> Female
             </label>
         </div>
         <div>
