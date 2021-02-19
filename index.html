@@ -11,8 +11,16 @@
     <form>
         <div>
             <label for ="input1" >Enter Year of Birth:</label>
-            <input type =" date" id="pickdate" name="date" placeholder="Enter year of birth">
+            <input type =" date" id="pickdate" name="date" placeholder="Enter year of birth" required>  <!--the user cannot submit their information without making this entry-->
  
+        </div>
+        <div>
+            <label for ="Male">
+                <input id ="Male" type ="radio" name= "Male-Female"> Male
+            </label>
+            <label>
+                <input id ="Female" type="radio" name="Male-Female"> Female
+            </label>
         </div>
         <div>
             <button type ="submit">Submit</button>
