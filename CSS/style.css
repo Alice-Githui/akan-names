@@ -45,16 +45,8 @@ td, th{
 table{
         padding-left: 75px;
 }
+.purpose{
+        padding: 30px;
 
-.purpose img{
-        float: right;
-}
+ }
 
-.form{
-        justify-content: center;
-
-}
-.landingpage{
-        background-color: cornflowerblue;
-
-}

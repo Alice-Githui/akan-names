@@ -16,46 +16,21 @@ Day of the week (d) = ( ( (CC/4) -2*CC-1) + ((5*YY/4) ) + ((26*(MM+1)/10)) + DD 
  /*day =(((CC/4) - 2*CC -1) + ((5*YY/4)) + ((26*(MM+1/10)) + DD) mod 7 */
 
 
- function getDay (){
-    var cc = (document.getElementById("Id1").value);
-    var yy = (document.getElementById("Id2").value);
-    var mm = (document.getElementById("Id3").value);
-    var dd = (document.getElementById("Id4").value);
-    
-    var todayDate = new Date ()
-    var today_day = today_day.getDate ();
-    var today_month = today_day.getMonth ();
-    var today_year = today_day.getYear ();
+ var day = ['Sun','Mon' , 'Tue' , 'Wed' , 'Thu' , 'Fri' , 'Sat']
+ var male = ['Kwasi' , 'Kwadwo', 'Kwabena', 'Kwaku', 'Yaw', 'Koh', 'Kwame']
+ var female = ['Akosua' , 'Adwoa', 'Abenaa', 'Akua', 'Yaa', 'Afua', 'Ama']
 
-    var day = (((cc/4) - 2*cc-1) + ((5*yy/4)) + ((26*(mm + 1) /10)) + dd ) % 7
+//function
+ function getData(){
+    event.preventDefault();
+    var date = (document.getElementById("birthday").value)
+    let male =(document.getElementById("Male").value)
+    let female =(document.getElementById("Female").value)
 
-   if (female){
-      Sunday = "Akosua"
-      Monday = "Adwoa"
-      Tuesday = "Abenaa"
-      Wednesday ="Akua"
-      Thursday = "Yaa"
-      Friday = "Afua"
-      Saturday = "Ama"
-   } else {
-      Sunday = "Kwasi"
-      Monday = "Kwadwo"
-      Tuesday = "Kwabena"
-      Wednesday = "Kwaku"
-      Thursday = "Yaw"
-      Friday = "Koh"
-      Saturday = "Kwame"
-   }
-function calcDay{
-   //Enter Elements//
-   var day = null,
-    var cc = (document.getElementById("Id1").value);
-    var yy = (document.getElementById("Id2").value);
-    var mm = (document.getElementById("Id3").value);
-    var dd = (document.getElementById("Id4").value);
-    results= (document.getElementById("dayoftheweek"))
-
-   day = (((cc/4) - 2*cc-1) + ((5*yy/4)) + ((26*(mm + 1) /10)) + dd ) % 7
+//Day picker
+let fdate = new Date(date).toDateString();
+ var mdate = fdate.split('') [0];
+document.getElementById("result").innerHTML =mdate;
 
    if (female && Sunday){
       results = "Akosua"
