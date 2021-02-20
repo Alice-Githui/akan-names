@@ -45,13 +45,18 @@
 
         <div class = "table">
             <div class= "card">
+                <div class ="row"> 
+                <div class="col-md-4">
                 <div class ="card-body">
                     <table>
+                        <thead>
                         <tr>
                             <th>Day of Birth</th>
                             <th>Male Name</th>
                             <th>Female Name</th>                            
                         </tr>
+                        </thead>
+                        <tbody>
                         <tr>
                             <td>Sunday</td>
                             <td>Kwasi</td>
@@ -87,33 +92,30 @@
                             <td>Kwame</td>
                             <td>Ama</td>
                         </tr>
+                        </tbody>
                     
                     </table>
                 </div>
+                </div>
+              </div>
             </div>
         </div>
-            <div class ="form">
-                <div class= "card">
-                   <div class= "card-body">
-                     <form onsubmit = "return calcDay">
+
+        <div class ="form">
+            <div class="card">
+                <div class= "card-body">
+                    <div class= "row">
+                    <div class ="col-md-12">
+                    <form onsubmit = "return calcDay">
                        <div>
                           <label for ="birthday" >Enter Year of Birth:</label>
-                          <!--<input type ="date" id="birthday" name="birthday" placeholder="Enter year of birth" required> <!--the user cannot submit their information without making this entry-->
+                          <input type ="date" id="birthday" name="birthday" placeholder="Enter year of birth" required> <!--the user cannot submit their information without making this entry-->
 
-                          Century Digits:
-                          <input id ="Id1" type ="date" min = "17" max = "20"> 
+                     </div>
 
-                          Year Digits:
-                          <input id = "Id2" type="date">
+                        <input type ="submit" value = "Calculate Day of the week">
+                        <div id = "dayoftheweek"></div>
 
-                          Birth Month:
-                          <input id ="Id3" type ="date">
-
-                          Birth Date:
-                          <input id ="Id4" type="date">
-
-
-                        </div>
                         <div>
                            <label for ="Male">
                            <input id ="Male" type ="radio" value="male" name="Male-Female"> Male
@@ -122,14 +124,17 @@
                            <input id ="Female" type="radio" value= "female" name="Male-Female"> Female
                            </label>
                         </div>
-                
-                        <input type ="submit" value = "Calculate Day of the week">
-                        <div id = "dayoftheweek"></div>
-        
-                      </form>
+                        
+                    </form>
+                    </div>
                     </div>
                 </div>
             </div>
+        </div>
+    </div>
+                
+            
+            
     
     <script src="JS/index.js"></script>
 </body>

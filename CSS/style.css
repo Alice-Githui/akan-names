@@ -1,6 +1,13 @@
-.header{
-    background-color: chocolate;
-    color: white;
-    font-style: normal;
-    font-size: 22px;
+.table{
+        border: solid 1px black;
+        padding-left: 10px;
+        justify-content: center;
+}
+.form{
+        justify-content: center;
+
+}
+.landingpage{
+        background-color: cornflowerblue;
+
 }
