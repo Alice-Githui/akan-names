@@ -23,8 +23,7 @@ Day of the week (d) = ( ( (CC/4) -2*CC-1) + ((5*YY/4) ) + ((26*(MM+1)/10)) + DD 
     var yy = (document.getElementById("Id2").value);
     var mm = (document.getElementById("Id3").value);
     var dd = (document.getElementById("Id4").value);
-    var d = (((cc/4) - 2*cc-1) + ((5*yy/4)) + ((26*(mm + 1) /10)) + dd ) % 7 //derived from the formulae// */
-
+    
     var todayDate = new Date ()
     var today_day = today_day.getDate ();
     var today_month = today_day.getMonth ();
@@ -32,7 +31,21 @@ Day of the week (d) = ( ( (CC/4) -2*CC-1) + ((5*YY/4) ) + ((26*(MM+1)/10)) + DD 
 
     var day = (((cc/4) - 2*cc-1) + ((5*yy/4)) + ((26*(mm + 1) /10)) + dd ) % 7
 
-    if 
-
- }
+   if (female){
+      Sunday = "Akosua"
+      Monday = "Adwoa"
+      Tuesday = "Abenaa"
+      Wednesday ="Akua"
+      Thursday = "Yaa"
+      Friday = "Afua"
+      Saturday = "Ama"
+   } else {
+      Sunday = "Kwasi"
+      Monday = "Kwadwo"
+      Tuesday = "Kwabena"
+      Wednesday = "Kwaku"
+      Thursday = "Yaw"
+      Friday = "Koh"
+      Saturday = "Kwame"
+   }
  
