@@ -32,42 +32,4 @@ let fdate = new Date(date).toDateString();
  var mdate = fdate.split('') [0];
 document.getElementById("result").innerHTML =mdate;
 
-   if (female && Sunday){
-      results = "Akosua"
-   } else if (male && Sunday) {
-      results = "Kwasi"
-   } 
-   if (Female && Monday){
-      results = "Adwoa"
-   } else if (male && Monday){
-      results = "Kwadwo"
-   }
-
-   if (Female && Tuesday){
-      results = "Abenaa"
-   } else if (male && Tuesday){
-      results = "Kwabena"
-   }
-
-   if(Female && Wednesday){
-      results ="Akua"
-   } else if (Male && Wednesday){
-      results = "Kwaku"
-   }
-
-   if (Female && Thursday){
-      results= "Yaa"
-   } else if (Male && Thursday){
-      results ="Yaw"
-   }
-
-   if(Female && Friday){
-      results = "Afua"
-   } else if (Male && Friday){
-      results ="Koh"
-   }
-   if(Female && Saturday){
-      results = "Ama"
-   } else if (Male && Saturday) {
-      results = "Kwame"
-   }
+   if 
