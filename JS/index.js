@@ -34,6 +34,28 @@ if(mdate == day [0] && male){
 
 }
 
+//control flow for female 
+
+if(mdate == day[0] && female){
+   console.log(female[0])
+
+} else if (mdate == day[1] && female){
+   console.log(female[1])
+} else if (mdate == day[2] && female){
+   console.log(female[2])
+} else if (mdate == day[3] && female){
+   console.log(female[3])
+} else if (mdate == day[4] && female){
+   console.log(female[4])
+} else if (mdate == day[5] && female){
+   console.log(female[5])
+} else if (mdate == day[6] && female){
+   console.log(female[6])
+} else if (mdate == day[7] && female){
+   console.log(female[7])
+}
+}
+
 
 
 
