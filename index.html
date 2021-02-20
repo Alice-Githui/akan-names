@@ -12,12 +12,11 @@
     <div class="container">
         <div class ="card">
             <div class="card-title">
-                <header class = "header">
+                <header class ="header">
                        <ul>
                            <li><a href= " ">About</a></li>
                            <li><a href= " ">Akan Names</a></li>
                         </ul>
-
                 </header>
             </div>
         </div>
@@ -27,7 +26,7 @@
                     </div>
                 <div class ="card">
                     <div class= "row">
-                    <div class= "col-md-12">
+                    <div class= "col-lg-12">
                     <div class="card-body">   
                        <div class ="purpose"> <!--this div class explains the use of this application-->
                   <p>
@@ -44,7 +43,7 @@
         <div class = "table">
             <div class= "card">
                 <div class ="row"> 
-                <div class="col-md-12">
+                <div class="col-lg-6">
                 <div class ="card-body">
                     <p>The table below shows the names assigned to children based on their day of birth and gender;</p>
                     <table>
@@ -94,13 +93,38 @@
                         </tbody>
                     
                     </table>
+                    <br>
+
+                    <form onsubmit = "return Day">
+                        <div>
+                           <label for ="birthday" >Enter Year of Birth:</label>
+                           <input type ="date" id="birthday" name="birthday" placeholder="Enter year of birth" required> <!--the user cannot submit their information without making this entry-->
+ 
+                      </div>
+ 
+                      <div>
+                         <label for ="Male">
+                         <input id ="Male" type ="radio" value="male" name="Male-Female"> Male
+                         </label>
+                         <label>
+                         <input id ="Female" type="radio" value= "female" name="Male-Female"> Female
+                         </label>
+                      </div>
+ 
+                      <div class = "button">
+                         <button type ="submit">Submit</button>
+                      </div>
+                      <p>Day of birth is<span id = "result"></span></p>
+                      <p>Akan Name is<span id ="result2"></span></p>                             
+                         
+                     </form>
                 </div>
                 </div>
               </div>
             </div>
         </div>
 
-        <div class ="form">
+     <!--   <div class ="form">
             <div class="card">
                 <div class= "card-body">
                     <div class= "row">
@@ -110,7 +134,7 @@
                           <label for ="birthday" >Enter Year of Birth:</label>
                           <input type ="date" id="birthday" name="birthday" placeholder="Enter year of birth" required> <!--the user cannot submit their information without making this entry-->
 
-                     </div>
+                     <!--</div>
 
                      <div>
                         <label for ="Male">
@@ -125,23 +149,12 @@
                         <button type ="submit">Submit</button>
                      </div>
                      <p>Day of birth is<span id = "result"></span></p>
-                     <p>Akan Name is<span id ="result2"></span></p>
+                     <p>Akan Name is<span id ="result2"></span></p>                                             
 
-                    
-
-
-
-                        
-
-                        
-                                 
-
-                        
-                        
                     </form>
                     </div>
                     </div>
-                </div>
+                </div> -->
             </div>
         </div>
     </div>

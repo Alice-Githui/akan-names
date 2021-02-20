@@ -4,9 +4,10 @@
         background-color:teal;
 }
 
-.header{
+header{
         font-style: normal;
         background-color: goldenrod;
+
 }
 
 .image{
@@ -46,6 +47,7 @@ td, th{
 }
 table{
         padding-left: 75px;
+        justify-content: center;
 }
 .purpose{
         padding: 30px;
