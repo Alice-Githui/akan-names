@@ -1,24 +1,6 @@
-/*
-Day of the week (d) = ( ( (CC/4) -2*CC-1) + ((5*YY/4) ) + ((26*(MM+1)/10)) + DD ) mod 7
-
- where;
-
- CC - is the century digits. For example 1989 has CC = 19
-
- YY - is the Year digits (1989 has YY = 89)
-
- MM -  is the Month
-
- DD - is the Day of the month 
-
- mod - is the modulus function ( % )*/
- 
- /*day =(((CC/4) - 2*CC -1) + ((5*YY/4)) + ((26*(MM+1/10)) + DD) mod 7 */
-
-
- var day = ['Sun','Mon' , 'Tue' , 'Wed' , 'Thu' , 'Fri' , 'Sat']
- var male = ['Kwasi' , 'Kwadwo', 'Kwabena', 'Kwaku', 'Yaw', 'Koh', 'Kwame']
- var female = ['Akosua' , 'Adwoa', 'Abenaa', 'Akua', 'Yaa', 'Afua', 'Ama']
+var day = ['Sun','Mon' , 'Tue' , 'Wed' , 'Thu' , 'Fri' , 'Sat']
+var male = ['Kwasi' , 'Kwadwo', 'Kwabena', 'Kwaku', 'Yaw', 'Koh', 'Kwame']
+var female = ['Akosua' , 'Adwoa', 'Abenaa', 'Akua', 'Yaa', 'Afua', 'Ama']
 
 //function
  function getData(){
@@ -32,4 +14,42 @@ let fdate = new Date(date).toDateString();
  var mdate = fdate.split('') [0];
 document.getElementById("result").innerHTML =mdate;
 
-   if 
+if(mdate == day [0] && male){
+   console.log(male[0]);
+} else if (mdate == day[1] && male){
+   console.log(male[1])
+} else if (mdate == day[2] && male){
+   console.log(male[2])
+} else if (mdate == day[3] && male){
+   console.log(male[3])
+} else if (mdate == day[4] && male){
+   console.log(male[4])
+} else if (mdate == day[5] && male){
+   console.log(male[5])
+} else if (mdate == day[6] && male){
+   console.log(male[6])
+} else if (mdate == day[7] && male){
+   console.log(male[7])
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
