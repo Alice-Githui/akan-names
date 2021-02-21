@@ -11,10 +11,10 @@ var female = ['Akosua' , 'Adwoa', 'Abenaa', 'Akua', 'Yaa', 'Afua', 'Ama']
 
 //Day picker
 let fdate = new Date(date).toDateString();
- var mdate = fdate.split('') [0];
-document.getElementById("result").innerHTML =mdate;
+ var mdate = fdate.split('')[0];
+document.getElementById("result").innerHTML = mdate;
 
-if(mdate == day [0] && male){
+if(mdate == day[0] && male){
    console.log(male[0]);
 } else if (mdate == day[1] && male){
    console.log(male[1])
@@ -34,11 +34,15 @@ if(mdate == day [0] && male){
 
 }
 
+//Day picker
+let fdate = new Date(date).toDateString();
+ var mdate = fdate.split('')[0];
+document.getElementById("result").innerHTML = mdate;
+
 //control flow for female 
 
-if(mdate == day[0] && female){
-   console.log(female[0])
-
+if (mdate == day[0] && female){
+   console.log(female[0]);
 } else if (mdate == day[1] && female){
    console.log(female[1])
 } else if (mdate == day[2] && female){

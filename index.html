@@ -22,22 +22,25 @@
         </div>
          <div class = "card">
             <div class ="row">
-                <div class = "col">
+                <div class = "col-md-6">
                     <div class = "rightside">
-                        <img src="Images/bacckgroundimage.jpeg" alt="background">
 
-                    </div>
-
-                </div>
-
-                <div class ="col">
-                    <div class= "leftside">
                         <p>The Ghanian culture, like most African cultures, have traditional naming systems. The Ghanian cultural naming system asigns children names, referred to as their Akan Names by taking into account their gender and the day when they were born.</p>
                           <br>
                         <p>This application takes into account the <strong><em>day </em></strong> of birth, that is, <strong><em>the day of the week when the child was born</em></strong>  and their <strong><em>gender</em></strong> to assign them their Akan Names.</p>
                           <br>
                         <p>Where people are not aware of their day of birth but know their date of birth, the application will use their date of birth and their year of birth and compute their day of birth.</p>
                         </p>
+                        
+
+                    </div>
+
+                </div>
+
+                <div class ="col-md-6">
+                    <div class= "leftside">
+                        <img src="Images/bacckgroundimage.jpeg" alt="background">
+                        
                     </div>
                 </div>
 
@@ -47,7 +50,7 @@
                 <div class = "card">
                     <div class= "row">
                         <div class = col-md-12>
-                            <form onsubmit = "return Day">
+                            <form>
                                 <div>
                                    <label for ="birthday" >Enter Year of Birth:</label>
                                    <input type ="date" id="birthday" name="birthday" placeholder="Enter year of birth" required> <!--the user cannot submit their information without making this entry-->
@@ -66,8 +69,12 @@
                               <div class = "button">
                                  <button type ="submit">Submit</button>
                               </div>
-                              <p>Day of birth is<span id = "result"></span></p>
-                              <p>Akan Name is<span id ="result2"></span></p>                             
+                              <div>
+                                  <button type = "submit" class ="btn btn-online-success" onclick = "getData"></button>                                
+                                     <p>Day of birth is:<span id = "result"></span></p>
+                                     <p>Akan Name is:<span id ="result2"></span></p>  
+                                
+                              </div>                           
                                  
                              </form>
 

@@ -6,6 +6,7 @@
 
 header{
         font-style: normal;
+        background-color: brown;
 
 }
 
@@ -33,24 +34,19 @@ header a:hover{
         font-size: 18px;
 }
 
-/* .rightside, .leftside{ 
-        height: 100vh;
-        width: auto;
-} */
 
 .col{
         height: 500px;
 }
-.leftside{
+.rightside{
         margin-top: 60px;
         margin-bottom: 60px;
         font-style: italic;
-        background-color: rosybrown;
         font-size: medium;
         margin-left: 0px;
+        width: 100%
 }
-
-.rightside{
-        height: 500px;
-
+form{
+        display: flex;
+        justify-content: center;
 }
