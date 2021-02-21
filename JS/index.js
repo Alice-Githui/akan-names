@@ -5,13 +5,13 @@ var female = ['Akosua' , 'Adwoa', 'Abenaa', 'Akua', 'Yaa', 'Afua', 'Ama']
 //function
  function getData(){
     event.preventDefault();
-    var date = (document.getElementById("birthday").value)
-    let male =(document.getElementById("Male").value)
-    let female =(document.getElementById("Female").value)
+    var date = (document.getElementById('date').value)
+    let male =(document.getElementById('Male').value)
+    let female =(document.getElementById('Female').value)
 
     let fdate = new Date(date).toDateString();
-    let mdate = fdate.split('')[0];
-    document.getElementById("result").innerHTML = mdate;
+    var mdate = fdate.split('')[0];
+    document.getElementById('result').innerHTML = mdate;
 
     if(mdate == day[0] && male){
       console.log(male[0]);
