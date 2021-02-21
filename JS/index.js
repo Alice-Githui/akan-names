@@ -57,25 +57,5 @@ if (mdate == day[0] && female){
    console.log(female[6])
 } else if (mdate == day[7] && female){
    console.log(female[7])
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+} 
 
