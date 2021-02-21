@@ -1,18 +1,11 @@
 .container{
         font-family: sans-serif;
         font-size: 16px;
+        background-color: sandybrown;
 }
 
 header{
         font-style: normal;
-
-}
-
-
-.image{
-        display: flex;
-        justify-content:space-evenly;
-        height: auto;
 
 }
 
@@ -40,16 +33,24 @@ header a:hover{
         font-size: 18px;
 }
 
-td, th{
-        border: solid 1px black;
-        padding:1.5px;
-}
-table{
-        padding-left: 75px;
-        justify-content: center;
-}
-.purpose{
-        padding: 30px;
+/* .rightside, .leftside{ 
+        height: 100vh;
+        width: auto;
+} */
 
- }
+.col{
+        height: 500px;
+}
+.leftside{
+        margin-top: 60px;
+        margin-bottom: 60px;
+        font-style: italic;
+        background-color: rosybrown;
+        font-size: medium;
+        margin-left: 0px;
+}
 
+.rightside{
+        height: 500px;
+
+}
