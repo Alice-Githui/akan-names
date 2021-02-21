@@ -9,8 +9,8 @@ var female = ['Akosua' , 'Adwoa', 'Abenaa', 'Akua', 'Yaa', 'Afua', 'Ama']
     var male =(document.getElementById('Male').value)
     var female =(document.getElementById('Female').value)
 
-    var adate = new Date(date).toDateString();
-    var aday = adate.split('')[0];
+    let fdate = new Date(date).toDateString();
+    var aday = fdate.split('')[0];
     document.getElementById('result').innerHTML = aday;
 
     if(aday == day[0] && male){
@@ -35,7 +35,7 @@ var female = ['Akosua' , 'Adwoa', 'Abenaa', 'Akua', 'Yaa', 'Afua', 'Ama']
       
    //control flow for female 
    
-   if (aday == day[0] && female){
+   if(aday == day[0] && female){
       console.log(female[0]);
    } else if (aday == day[1] && female){
       console.log(female[1])
