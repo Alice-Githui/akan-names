@@ -1,11 +1,12 @@
 .container{
         font-family: sans-serif;
         font-size: 16px;
-        background-color: sandybrown;
+}
+body{
+     background-color: brown;
 }
 
-header{
-        font-style: normal;
+.header{
         background-color: brown;
 
 }
@@ -47,6 +48,6 @@ header a:hover{
         width: 100%
 }
 form{
-        display: flex;
-        justify-content: center;
+        border: 1px black solid;
+        text-align: center;
 }
