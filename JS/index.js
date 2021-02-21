@@ -34,10 +34,10 @@ if(mdate == day[0] && male){
 
 }
 
-//Day picker
+/*//Day picker
 let fdate = new Date(date).toDateString();
  var mdate = fdate.split('')[0];
-document.getElementById("result").innerHTML = mdate;
+document.getElementById("result").innerHTML = mdate;*/
 
 //control flow for female 
 

@@ -3,10 +3,10 @@
         font-size: 16px;
 }
 body{
-     background-color: brown;
+     background-color: lightskyblue;
 }
 
-.header{
+.card-title{
         background-color: brown;
 
 }
@@ -42,12 +42,16 @@ header a:hover{
 .rightside{
         margin-top: 60px;
         margin-bottom: 60px;
+        margin-left: 15px;
         font-style: italic;
         font-size: medium;
         margin-left: 0px;
         width: 100%
 }
+
 form{
         border: 1px black solid;
         text-align: center;
+        display: block;
+        margin-top: 15px;
 }
