@@ -10,24 +10,24 @@ var female = ['Akosua' , 'Adwoa', 'Abenaa', 'Akua', 'Yaa', 'Afua', 'Ama']
     let female =(document.getElementById('Female').value)
 
     let fdate = new Date(date).toDateString();
-    var mdate = fdate.split('')[0];
-    document.getElementById('result').innerHTML = mdate;
+    var day = fdate.split('')[0];
+    document.getElementById('result').innerHTML = day;
 
-    if(mdate == day[0] && male){
+    if(day == day[0] && male){
       console.log(male[0]);
-   } else if (mdate == day[1] && male){
+   } else if (day == day[1] && male){
       console.log(male[1])
-   } else if (mdate == day[2] && male){
+   } else if (day == day[2] && male){
       console.log(male[2])
-   } else if (mdate == day[3] && male){
+   } else if (day == day[3] && male){
       console.log(male[3])
-   } else if (mdate == day[4] && male){
+   } else if (day == day[4] && male){
       console.log(male[4])
-   } else if (mdate == day[5] && male){
+   } else if (day == day[5] && male){
       console.log(male[5])
-   } else if (mdate == day[6] && male){
+   } else if (day == day[6] && male){
       console.log(male[6])
-   } else if (mdate == day[7] && male){
+   } else if (day == day[7] && male){
       console.log(male[7])
    }
    
@@ -35,21 +35,21 @@ var female = ['Akosua' , 'Adwoa', 'Abenaa', 'Akua', 'Yaa', 'Afua', 'Ama']
       
    //control flow for female 
    
-   if (mdate == day[0] && female){
+   if (day == day[0] && female){
       console.log(female[0]);
-   } else if (mdate == day[1] && female){
+   } else if (day == day[1] && female){
       console.log(female[1])
-   } else if (mdate == day[2] && female){
+   } else if (day == day[2] && female){
       console.log(female[2])
-   } else if (mdate == day[3] && female){
+   } else if (day == day[3] && female){
       console.log(female[3])
-   } else if (mdate == day[4] && female){
+   } else if (day == day[4] && female){
       console.log(female[4])
-   } else if (mdate == day[5] && female){
+   } else if (day == day[5] && female){
       console.log(female[5])
-   } else if (mdate == day[6] && female){
+   } else if (day == day[6] && female){
       console.log(female[6])
-   } else if (mdate == day[7] && female){
+   } else if (day == day[7] && female){
       console.log(female[7])
    } 
 
