@@ -1,33 +1,55 @@
-var day = ['Sun','Mon' , 'Tue' , 'Wed' , 'Thu' , 'Fri' , 'Sat']
-var male = ['Kwasi' , 'Kwadwo', 'Kwabena', 'Kwaku', 'Yaw', 'Koh', 'Kwame']
-var female = ['Akosua' , 'Adwoa', 'Abenaa', 'Akua', 'Yaa', 'Afua', 'Ama']
+//var male = ['Kwasi' , 'Kwadwo', 'Kwabena', 'Kwaku', 'Yaw', 'Koh', 'Kwame']
+//var female = ['Akosua' , 'Adwoa', 'Abenaa', 'Akua', 'Yaa', 'Afua', 'Ama']
+
+
+//GetDay Function
+var d = new Date()
+var n = d.getDay()
 
 //function
  function getData(){
-    event.preventDefault();
-    var date = (document.getElementById('date').value)
-    var male =(document.getElementById('Male').value)
-    var female =(document.getElementById('Female').value)
+    //event.preventDefault();
+    var date = document.getElementById('date').value
+    var male = document.getElementById('Male').value
+    var female = document.getElementById('Female').value
 
-    let fdate = new Date(date).toDateString();
-    var aday = fdate.split('')[0];
-    document.getElementById('result').innerHTML = aday;
+    var d = new Date(date);
+    var day = new Array (7);
+    day [0] = ("Sunday"),
+    day [1] = ("Monday")
+    day [2] = ("Tuesday")
+    day [3] = ("Wednesday")
+    day [4] = ("Thursday")
+    day [5] = ("Friday")
+    day [6] = ("Saturday")
+    day [1] = ("Monday")
 
-    if(aday == day[0] && male){
+    var n =day[d.getDay()];
+    document.getElementById('result').innerHTML = n;
+
+    /*var male =  ['Kwasi' , 'Kwadwo', 'Kwabena', 'Kwaku', 'Yaw', 'Koh', 'Kwame']
+    var gender = male(0);
+    document.getElementById ('result2').innerHTML = gender;
+
+    var female = ['Akosua' , 'Adwoa', 'Abenaa', 'Akua', 'Yaa', 'Afua', 'Ama']
+    var gender2 = female(0);
+    document.getElementById ('result3').innerHTML = gender;*/
+
+    if(n == day[0] && male){
       console.log(male[0]);
-   } else if (aday == day[1] && male){
+   } else if (n == day[1] && male){
       console.log(male[1])
-   } else if (aday == day[2] && male){
+   } else if (n == day[2] && male){
       console.log(male[2])
-   } else if (aday == day[3] && male){
+   } else if (n == day[3] && male){
       console.log(male[3])
-   } else if (aday == day[4] && male){
+   } else if (n == day[4] && male){
       console.log(male[4])
-   } else if (aday == day[5] && male){
+   } else if (n == day[5] && male){
       console.log(male[5])
-   } else if (aday == day[6] && male){
+   } else if (n == day[6] && male){
       console.log(male[6])
-   } else if (aday == day[7] && male){
+   } else if (n == day[7] && male){
       console.log(male[7])
    }
    
@@ -35,25 +57,20 @@ var female = ['Akosua' , 'Adwoa', 'Abenaa', 'Akua', 'Yaa', 'Afua', 'Ama']
       
    //control flow for female 
    
-   if(aday == day[0] && female){
+   if(n == day[0] && female){
       console.log(female[0]);
-   } else if (aday == day[1] && female){
+   } else if (n == day[1] && female){
       console.log(female[1])
-   } else if (aday == day[2] && female){
+   } else if (n == day[2] && female){
       console.log(female[2])
-   } else if (aday == day[3] && female){
+   } else if (n == day[3] && female){
       console.log(female[3])
-   } else if (aday == day[4] && female){
+   } else if (n == day[4] && female){
       console.log(female[4])
-   } else if (aday == day[5] && female){
+   } else if (n == day[5] && female){
       console.log(female[5])
-   } else if (aday == day[6] && female){
+   } else if (n == day[6] && female){
       console.log(female[6])
-   } else if (aday == day[7] && female){
+   } else if (n == day[7] && female){
       console.log(female[7])
    } 
-
-
-
-
-
