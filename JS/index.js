@@ -1,5 +1,5 @@
-//var male = ['Kwasi' , 'Kwadwo', 'Kwabena', 'Kwaku', 'Yaw', 'Koh', 'Kwame']
-//var female = ['Akosua' , 'Adwoa', 'Abenaa', 'Akua', 'Yaa', 'Afua', 'Ama']
+let male = ['Kwasi' , 'Kwadwo', 'Kwabena', 'Kwaku', 'Yaw', 'Koh', 'Kwame']
+let female = ['Akosua' , 'Adwoa', 'Abenaa', 'Akua', 'Yaa', 'Afua', 'Ama']
 
 
 //GetDay Function
@@ -22,18 +22,9 @@ var n = d.getDay()
     day [4] = ("Thursday")
     day [5] = ("Friday")
     day [6] = ("Saturday")
-    day [1] = ("Monday")
 
     var n =day[d.getDay()];
     document.getElementById('result').innerHTML = n;
-
-    /*var male =  ['Kwasi' , 'Kwadwo', 'Kwabena', 'Kwaku', 'Yaw', 'Koh', 'Kwame']
-    var gender = male(0);
-    document.getElementById ('result2').innerHTML = gender;
-
-    var female = ['Akosua' , 'Adwoa', 'Abenaa', 'Akua', 'Yaa', 'Afua', 'Ama']
-    var gender2 = female(0);
-    document.getElementById ('result3').innerHTML = gender;*/
 
     if(n == day[0] && male){
       console.log(male[0]);
